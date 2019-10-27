@@ -1,0 +1,7 @@
+# mingw used to compile
+# cygwin will not work because of paths ... maybe this can be fixed with cygpath -m (makefile patch for RIOT?)
+
+cp riot_test1 $(RIOTBASE)/examples
+cd $(RIOTBASE)/examples/riot_test1
+make clean && BOARD=nucleo-l432kc make all
+
