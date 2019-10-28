@@ -1,7 +1,10 @@
-# mingw used to compile
+# msys2 (not MinGw/msys11) used to compile
+# use pacman -S make to install make
+# use pacman -S unzip to install unzip
 # cygwin will not work because of paths ... maybe this can be fixed with cygpath -m (makefile patch for RIOT?)
 
 cp riot_test1 $(RIOTBASE)/examples
 cd $(RIOTBASE)/examples/riot_test1
 make clean && BOARD=nucleo-l432kc make all
+make clean && BOARD=nucleo-f303k8 make all
 
