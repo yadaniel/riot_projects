@@ -13,6 +13,9 @@ make clean && BOARD=nucleo-f303k8 make all
 # the correct BOARD setting
 BOARD=nucleo-f303k8 make clean all
 
+# make also the hex file
+BOARD=nucleo-f303k8 make clean hexfile
+
 # list all installed packages on msys2
 # pacman -Qe
 
