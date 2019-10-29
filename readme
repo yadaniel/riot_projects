@@ -10,6 +10,9 @@ cd $(RIOTBASE)/examples/riot_test1
 make clean && BOARD=nucleo-l432kc make all
 make clean && BOARD=nucleo-f303k8 make all
 
+# the correct BOARD setting
+BOARD=nucleo-f303k8 make clean all
+
 # list all installed packages on msys2
 # pacman -Qe
 
